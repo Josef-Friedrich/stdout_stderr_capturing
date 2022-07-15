@@ -1,0 +1,1 @@
+# stdout_capturing

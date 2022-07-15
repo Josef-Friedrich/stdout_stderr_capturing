@@ -5,10 +5,10 @@ Capture the stdout or stderr output as a list in a context manager block (with).
 
 Maybe better alternatives:
 
-* https://capturer.readthedocs.io/en/latest/
-* https://github.com/bskinn/stdio-mgr
-* https://github.com/minrk/wurlitzer
-* https://pypi.org/project/OutputCatcher/0.0.9/#files
+* `capturer <https://pypi.org/project/capturer>`_ https://github.com/xolox/python-capturer
+* `stdio-mgr <https://pypi.org/project/stdio-mgr>`_
+* `OutputCatcher <https://pypi.org/project/OutputCatcher>`_
+* `wurlitzer <https://pypi.org/project/wurlitzer>`_
 
 Capture stdout:
 

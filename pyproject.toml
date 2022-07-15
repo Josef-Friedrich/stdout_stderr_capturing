@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "stdout_stderr_capturing"
+version = "0.1.0"
+description = "Capture the stdout or stderr output as a list in a context manager block (with)."
+authors = ["Josef Friedrich <josef@friedrich.rocks>"]
+readme = "README.rst"
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Python :: 3.8",
+]
+repository = "https://github.com/Josef-Friedrich/stdout_stderr_capturing"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+termcolor = "^1.1.0"
+
+[build-system]
+requires = ["poetry>=1.2.0b2"]
+build-backend = "poetry.masonry.api"

@@ -14,11 +14,12 @@ repository = "https://github.com/Josef-Friedrich/stdout_stderr_capturing"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-capturer = "^3.0"
 
 [tool.poetry.group.dev.dependencies]
 termcolor = "^1.1.0"
 autopep8 = "^1.6.0"
+capturer = "^3.0"
+tox = "^3.25.1"
 
 [build-system]
 requires = ["poetry>=1.2.0b2"]

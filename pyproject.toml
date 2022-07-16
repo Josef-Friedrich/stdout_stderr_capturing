@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "stdout_stderr_capturing"
-version = "0.1.0"
+version = "0.2.0"
 description = "Capture the stdout or stderr output as a list in a context manager block (with)."
 authors = ["Josef Friedrich <josef@friedrich.rocks>"]
 readme = "README.rst"

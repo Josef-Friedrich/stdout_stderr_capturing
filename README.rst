@@ -1,3 +1,8 @@
+.. image:: https://github.com/Josef-Friedrich/stdout_stderr_capturing/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/Josef-Friedrich/stdout_stderr_capturing/actions/workflows/tests.yml
+    :alt: Tests
+
+
 stdout_stderr_capturing
 =======================
 

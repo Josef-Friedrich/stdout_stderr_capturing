@@ -1,7 +1,10 @@
+.. image:: http://img.shields.io/pypi/v/stdout-stderr-capturing.svg
+    :target: https://pypi.org/project/stdout-stderr-capturing
+    :alt: This package on the Python Package Index
+
 .. image:: https://github.com/Josef-Friedrich/stdout_stderr_capturing/actions/workflows/tests.yml/badge.svg
     :target: https://github.com/Josef-Friedrich/stdout_stderr_capturing/actions/workflows/tests.yml
     :alt: Tests
-
 
 stdout_stderr_capturing
 =======================

@@ -2,19 +2,28 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.1.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 <!-- insertion marker -->
 ## Unreleased
 
-<small>[Compare with latest](https://github.com/Josef-Friedrich/stdout_stderr_capturing/compare/v0.2.0...HEAD)</small>
+<small>[Compare with latest](https://github.com/Josef-Friedrich/stdout_stderr_capturing/compare/v0.2.1...HEAD)</small>
+
+<!-- insertion marker -->
+
+## [v0.2.1](https://github.com/Josef-Friedrich/stdout_stderr_capturing/releases/tag/v0.2.1) - 2024-02-14
+
+<small>[Compare with v0.2.0](https://github.com/Josef-Friedrich/stdout_stderr_capturing/compare/v0.2.0...v0.2.1)</small>
 
 ### Added
 
 - Add tooling to reformat the code ([d0e04f6](https://github.com/Josef-Friedrich/stdout_stderr_capturing/commit/d0e04f6c2e4b8952dc259ec0f368824bb2d0dd8b) by Josef Friedrich).
 
-<!-- insertion marker -->
+### Changed
+
+- Switch to pytest instead of nose2
+
 ## [v0.2.0](https://github.com/Josef-Friedrich/stdout_stderr_capturing/releases/tag/v0.2.0) - 2022-07-16
 
 <small>[Compare with v0.1.0](https://github.com/Josef-Friedrich/stdout_stderr_capturing/compare/v0.1.0...v0.2.0)</small>
@@ -39,4 +48,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - Add tests ([bbd6122](https://github.com/Josef-Friedrich/stdout_stderr_capturing/commit/bbd612299ca54e01e4a4eff2966346bcb0b0ecb0) by Josef Friedrich).
-

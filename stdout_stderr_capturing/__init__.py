@@ -18,7 +18,7 @@ class Capturing(List[str]):
         `Answer on Stackoverflow <https://stackoverflow.com/a/16571630>`_
     """
 
-    def __init__(self, stream: Stream = "stdout", clean_ansi: bool = False):
+    def __init__(self, stream: Stream = "stdout", clean_ansi: bool = False) -> None:
         if stream not in ["stdout", "stderr"]:
             raise (ValueError("“stream” must be either “stdout” or “stderr”"))
         self.stream = stream
@@ -33,7 +33,7 @@ class Capturing(List[str]):
             sys.stderr = self._stringio = StringIO()
         return self
 
-    def __exit__(self, *_):
+    def __exit__(self, *_) -> None:
         if self.clean_ansi:
             output = self._clean_ansi(self._stringio.getvalue())
         else:

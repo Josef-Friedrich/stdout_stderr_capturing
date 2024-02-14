@@ -1,49 +1,48 @@
 import sys
-import unittest
 
 from termcolor import cprint
 
 from stdout_stderr_capturing import Capturing
 
 
-class TestCapturing(unittest.TestCase):
-    def test_stdout(self):
+class TestCapturing:
+    def test_stdout(self) -> None:
         with Capturing() as output:
             print("line 1")
             print("line 2")
-        self.assertEqual(output, ["line 1", "line 2"])
+        assert output == ["line 1", "line 2"]
 
-    def test_method_tostring(self):
+    def test_method_tostring(self) -> None:
         with Capturing() as output:
             print("line 1")
-        self.assertEqual(output.tostring(), "line 1")
+        assert output.tostring() == "line 1"
 
-    def test_argument_stream_stdout_with_stdout(self):
+    def test_argument_stream_stdout_with_stdout(self) -> None:
         with Capturing(stream="stdout") as output:
             print("line 1")
-        self.assertEqual(output, ["line 1"])
+        assert output == ["line 1"]
 
-    def test_argument_stream_stdout_with_stderr(self):
+    def test_argument_stream_stdout_with_stderr(self) -> None:
         with Capturing(stream="stdout") as output:
             print("line 1", file=sys.stderr)
-        self.assertEqual(output, [])
+        assert output == []
 
-    def test_argument_stream_stderr_with_stdout(self):
+    def test_argument_stream_stderr_with_stdout(self) -> None:
         with Capturing(stream="stderr") as output:
             print("line 1")
-        self.assertEqual(output, [])
+        assert output == []
 
-    def test_argument_stream_stderr_with_stderr(self):
+    def test_argument_stream_stderr_with_stderr(self) -> None:
         with Capturing(stream="stderr") as output:
             print("line 1", file=sys.stderr)
-        self.assertEqual(output, ["line 1"])
+        assert output == ["line 1"]
 
-    def test_argument_clean_ansi_true(self):
+    def test_argument_clean_ansi_true(self) -> None:
         with Capturing(clean_ansi=True) as output:
             cprint("line 1", color="red")
-        self.assertEqual(output, ["line 1"])
+        assert output == ["line 1"]
 
-    def test_argument_clean_ansi_false(self):
+    def test_argument_clean_ansi_false(self) -> None:
         with Capturing(clean_ansi=False) as output:
             cprint("line 1", color="red")
-        self.assertEqual(output, ["\x1b[31mline 1\x1b[0m"])
+        assert output == ["\x1b[31mline 1\x1b[0m"]

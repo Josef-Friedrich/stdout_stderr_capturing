@@ -36,7 +36,6 @@ Using `pytest <https://docs.pytest.org/en/latest/how-to/capture-stdout-stderr.ht
 
 .. code:: python
 
-
     def test_myoutput(capsys):  # or use "capfd" for fd-level
         print("hello")
         sys.stderr.write("world\n")

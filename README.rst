@@ -30,6 +30,21 @@ With Python 3:
     with redirect_stdout(stdout), redirect_stderr(stderr):
         print('Test')
 
+Using `pytest <https://docs.pytest.org/en/latest/how-to/capture-stdout-stderr.html#accessing-captured-output-from-a-test-function>`_
+
+.. code:: python
+
+
+    def test_myoutput(capsys):  # or use "capfd" for fd-level
+        print("hello")
+        sys.stderr.write("world\n")
+        captured = capsys.readouterr()
+        assert captured.out == "hello\n"
+        assert captured.err == "world\n"
+        print("next")
+        captured = capsys.readouterr()
+        assert captured.out == "next\n"
+
 Capture stdout:
 
 .. code:: python

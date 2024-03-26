@@ -18,6 +18,18 @@ Maybe better alternatives:
 * `OutputCatcher <https://pypi.org/project/OutputCatcher>`_
 * `wurlitzer <https://pypi.org/project/wurlitzer>`_
 
+With Python 3:
+
+.. code:: python
+
+    from io import StringIO
+    from contextlib import redirect_stdout, redirect_stderr
+
+    stdout = StringIO()
+    stderr = StringIO()
+    with redirect_stdout(stdout), redirect_stderr(stderr):
+        print('Test')
+
 Capture stdout:
 
 .. code:: python

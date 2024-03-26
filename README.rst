@@ -29,6 +29,8 @@ With Python 3:
     stderr = StringIO()
     with redirect_stdout(stdout), redirect_stderr(stderr):
         print('Test')
+        stdout.getvalue()
+        stderr.getvalue()
 
 Using `pytest <https://docs.pytest.org/en/latest/how-to/capture-stdout-stderr.html#accessing-captured-output-from-a-test-function>`_
 
